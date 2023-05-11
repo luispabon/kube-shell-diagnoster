@@ -1,10 +1,6 @@
 name: Docker build & publish
 
 on:
-  # Ensure we're run after tests
-  workflow_run:
-    branches: [ "main" ]
-
   # Allow workflow to be manually run from the GitHub UI
   workflow_dispatch:
 
