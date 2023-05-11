@@ -9,8 +9,6 @@ on:
 
 jobs:
   build-and-push:
-    # We only deploy main
-    if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
 
     steps:
@@ -33,11 +31,11 @@ jobs:
         id: container
         run: |
           TAGS=$(cat release | awk '{print "luispabon/kube-shell-diagnoster:latest,luispabon/kube-shell-diagnoster:" $1 ",luispabon/kube-shell-diagnoster:" $2 ",luispabon/kube-shell-diagnoster:" $3}')
-          echo "::set-output name=tags::${TAGS}"
+          run: echo "tags=${TAGS}" >> $GITHUB_OUTPUT
           echo "Docker tags to build: ${TAGS}"
 
       - name: Build & push container image
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v4
         with:
           context: .
           platforms: linux/amd64
