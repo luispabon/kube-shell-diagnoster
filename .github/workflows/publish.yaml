@@ -3,6 +3,9 @@ name: Docker build & publish
 on:
   # Allow workflow to be manually run from the GitHub UI
   workflow_dispatch:
+  pull_request:
+  push:
+    branches: [ master ]
 
 jobs:
   deploy:
@@ -37,8 +40,8 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          platforms: linux/amd64,linux/arm64,linux/arm/v7
-          push: true
+          platforms: linux/amd64
+          push: ${{ github.ref == 'refs/heads/main' }}
           pull: true
           tags: "${{ steps.container.outputs.tags }}"
 
