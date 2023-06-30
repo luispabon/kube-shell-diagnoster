@@ -38,7 +38,8 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          platforms: linux/amd64,linux/arm64,linux/arm/v7
+#          platforms: linux/amd64,linux/arm64,linux/arm/v7
+          platforms: linux/amd64
           push: ${{ github.ref == 'refs/heads/main' }}
           pull: true
           tags: "${{ steps.container.outputs.tags }}"
