@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 RUN apk add --no-cache \
-        awscli \
+        aws-cli \
         curl \
         fish \
         sudo \
