@@ -4,7 +4,9 @@ RUN apk add --no-cache \
         aws-cli \
         curl \
         fish \
+        jq \
         sudo \
-        wget
+        wget \
+        yq
 
 CMD /usr/bin/fish
