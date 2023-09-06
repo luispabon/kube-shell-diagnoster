@@ -8,3 +8,4 @@ A small container that can be use in kubernetes (or elsewhere) for debugging she
  * `wget`
  * `sudo`
  * `nslookup` etc (via `busybox`)
+ * `mongosh` 1.x
