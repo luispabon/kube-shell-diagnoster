@@ -4,6 +4,7 @@ WORKDIR /build
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
+        bind9-dnsutils \
         ca-certificates \
         curl \
         fish \
