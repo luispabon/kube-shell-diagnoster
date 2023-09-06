@@ -11,6 +11,7 @@ A small container that can be use in kubernetes (or elsewhere) for debugging she
  * `nslookup` etc (via `busybox`)
  * `jq`
  * `yq`
+ * `mongosh` 1.x
 
 ## Examples
 
