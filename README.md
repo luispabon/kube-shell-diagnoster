@@ -8,7 +8,10 @@ A small container that can be use in kubernetes (or elsewhere) for debugging she
  * `cURL`
  * `wget`
  * `sudo`
- * `nslookup` etc (via `busybox`)
+ * `nslookup`
+ * `dig`
+ * `ping`
+ * `nano`
  * `jq`
  * `yq`
  * `mongosh` 1.x

@@ -8,7 +8,9 @@ RUN apt-get update \
         ca-certificates \
         curl \
         fish \
+        inetutils-ping \
         jq \
+        nano \
         sudo \
         unzip \
         wget \
