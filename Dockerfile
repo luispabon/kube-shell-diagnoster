@@ -4,6 +4,7 @@ WORKDIR /build
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
+        awscli \
         bind9-dnsutils \
         ca-certificates \
         curl \
@@ -18,11 +19,6 @@ RUN apt-get update \
         wget \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
-
-RUN wget "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -O "awscliv2.zip" \
-    && unzip awscliv2.zip \
-    &&  ./aws/install \
-    && rm awscliv2.zip aws -Rf
 
 ENV MONGOSH_VERSION=1.10.6
 
