@@ -1,4 +1,4 @@
-FROM ubuntu:jammy
+FROM ubuntu:lunar
 
 WORKDIR /build
 
@@ -10,6 +10,7 @@ RUN apt-get update \
         fish \
         inetutils-ping \
         jq \
+        kcat \
         nano \
         sudo \
         unzip \
