@@ -10,10 +10,12 @@ RUN apt-get update \
         curl \
         fish \
         inetutils-ping \
+        iputils-tracepath \
         jq \
         kcat \
         nano \
         sudo \
+        traceroute \
         unzip \
         yq \
         wget \
