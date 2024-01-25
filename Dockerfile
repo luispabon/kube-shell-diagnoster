@@ -14,6 +14,7 @@ RUN apt-get update \
         jq \
         kcat \
         nano \
+        openssh-client \
         sudo \
         traceroute \
         unzip \
