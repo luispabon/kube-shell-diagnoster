@@ -1,4 +1,4 @@
-FROM ubuntu:lunar
+FROM ubuntu:mantic
 
 WORKDIR /build
 
@@ -9,10 +9,12 @@ RUN apt-get update \
         ca-certificates \
         curl \
         fish \
+        htop \
         inetutils-ping \
         iputils-tracepath \
         jq \
         kcat \
+        less \
         nano \
         openssh-client \
         sudo \
