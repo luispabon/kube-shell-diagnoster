@@ -1,4 +1,4 @@
-FROM ubuntu:mantic
+FROM ubuntu:25.04
 
 WORKDIR /build
 
@@ -17,6 +17,7 @@ RUN apt-get update \
         less \
         nano \
         openssh-client \
+        redis-tools \
         sudo \
         traceroute \
         unzip \
