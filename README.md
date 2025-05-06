@@ -4,17 +4,19 @@ A small container that can be use in kubernetes (or elsewhere) for debugging she
 
 ## Features
  * Fish shell
+ * `amqp-tools`
  * `aws-cli`
  * `cURL`
- * `wget`
- * `sudo`
- * `nslookup`
  * `dig`
- * `ping`
- * `nano`
  * `jq`
- * `yq`
  * `mongosh` 1.x
+ * `nano`
+ * `nslookup`
+ * `ping`
+ * `redis-tools`
+ * `sudo`
+ * `wget`
+ * `yq`
 
 ## Examples
 

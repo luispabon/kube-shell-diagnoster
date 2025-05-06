@@ -4,6 +4,7 @@ WORKDIR /build
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
+        amqp-tools \
         awscli \
         bind9-dnsutils \
         ca-certificates \
